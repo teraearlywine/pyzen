@@ -50,5 +50,14 @@
         + `first = (1,2,3)`
         + `second = (1,2,3,)` -> has an optional trailing comma
         + 3 & 4 are the same without parentheses. just stick to parentheses
-+ item 7: consider conditional expressions for simple inlne logic 
-    + ...
++ item 7: consider conditional expressions (aka ternary expressions) for simple inline logic 
+    + python "if" statements are not expressions
+    + if, elif and else blocks can all contain additional statements. 
+    + e.g. the whole group of blocks doesn't need to evaluate to a single value that can be stored in a variable or passed as a function argument 
+    + python supports conditional expressions which let you add if/elif/else nearly anywhere an expression is allowd
+        + conditional expressions are basically just one line 
+        + i.e. `condition if true value else false value`
+    + conditional expr in python allow you to put an if statement anywhere an expression would normally go
+    + the order of the test expression, true result expression, and false result expression in a conditional exp. is different than other ternary operators in other languages 
+    + don't use cond. expr. in places where they increase ambiguity or harm readability for new code readers
+    + prefer standard if statements + helper functions when it's unclear whether conditional statements provide a compelling benefit 
